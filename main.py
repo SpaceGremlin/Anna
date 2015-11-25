@@ -1,4 +1,4 @@
-import discord,logging,re,subprocess,magic,sys,os,mci,anna
+import discord,anna
 
 def main():
     help_text = r"""

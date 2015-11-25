@@ -1,4 +1,4 @@
-import discord,logging,re,subprocess,magic,sys,os,mci,markov
+import discord,logging,re,subprocess,sys,os,mci,markov
 
 class Anna:
     def __init__(self,client,help_text="Help text not configured",markov_file='main_log.log'):
