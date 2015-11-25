@@ -103,13 +103,6 @@ class Anna:
             (img_urls,msg) = mci.image_urls(message.content)
             for url in img_urls:
                 self.client.send_message(message.channel,url)
-            (file_names,failed) = magic.get_filenames(msg)
-            for file_name in file_names:
-                self.client.send_file(message.channel, file_name)
-                os.remove(file_name)
-                print('done with file: ' + file_name + ' will now delete it')
-            for card in failed:
-                client.send_message(message.channel, 'Could not find: '+card)
 
     def exit(self,message):
         '''If the author of the message is a admin, the bot will logout of discord otherwise print error msg'''
