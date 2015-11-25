@@ -1,4 +1,6 @@
 *.conf
 *.log
 *.txt
+dwnMagic.sh
+magic.py
 __pycache__/*
